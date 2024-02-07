@@ -20,8 +20,13 @@ const Widget = ({type}) => {
               isMoney: false,
               link: "See all users",
               icon: (
-                <PersonOutlinedIcon className="icon"/>
-              )
+                <PersonOutlinedIcon className="icon"
+                style={{
+                  color: "crimson",
+                  backgroundColor: "rgba(255, 0, 0, 0.2)",
+                }}
+                />
+              ),
           };
           break;
           case "order":
@@ -30,7 +35,11 @@ const Widget = ({type}) => {
               isMoney: false,
               link: "View all orders",
               icon: (
-                <AccountBalanceWalletOutlinedIcon className="icon"/>
+                <AccountBalanceWalletOutlinedIcon className="icon"
+                style={{
+                  color: "purple",
+                  backgroundColor: "rgba(128, 0, 128, 0.2)",
+                }}/>
               )
           };
           break;
@@ -40,7 +49,12 @@ const Widget = ({type}) => {
               isMoney: true,
               link: "View net earnings",
               icon: (
-                <ShoppingCartOutlinedIcon className="icon"/>
+                <ShoppingCartOutlinedIcon className="icon"
+                style={{
+                  color: "golden rod",
+                  backgroundColor: "rgba(218, 165, 32, 0.2)",
+                }}
+                />
               )
           };
           break;
@@ -50,7 +64,12 @@ const Widget = ({type}) => {
               isMoney: true,
               link: "See details",
               icon: (
-                <MonetizationOnOutlinedIcon className="icon"/>
+                <MonetizationOnOutlinedIcon className="icon"
+                style={{
+                  color: "green",
+                  backgroundColor: "rgba(0, 128, 0, 0.2)",
+                }}
+                />
               )
           };
           break;
